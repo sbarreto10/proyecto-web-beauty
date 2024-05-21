@@ -1,10 +1,65 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
+    <title>Contact</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/MAGNÉTICA.ico">
+    
 </head>
 <body>
-    <p>Register</p>
+    <header>
+        <nav>
+            <h1>Hablá con nosotros</h1>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Compra online</h2>
+            <form action="#" id="formRegister" method="GET">
+                <div class="form-control">
+                    <label for="">Seleccioná el tema</label>
+                    <select name="list-theme" id="list-theme" required>
+                        <option value="">Seleccione</option>
+                        <option value="">Calidad del producto</option>
+                        <option value="">Servicio al cliente</option>
+                        <option value="">Comentarios</option>
+                    </select>
+                </div>
+                <div class="error" id="error-firstname"></div>
+                <div class="form-control">
+                    <label for="">Nombre</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="error" id="error-firstname"></div>
+                <div  class="form-control">
+                    <label for="">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" maxlength="4" minlength="2" required>
+                </div>
+                <div class="error" id="error-firstname"></div>
+                <div class="form-control">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Por favor ingresa el email" required>
+                </div>
+                <div class="error" id="error-firstname"></div>
+                <div class="form-control">
+                    <label for="">Teléfono</label>
+                    <input type="tel" name="telephone" id="telephone" required>
+                </div>
+                <br>
+                <div class="form-control">                    
+                    <label for="">Mensaje</label>
+                    <textarea name="comment" id="comment" requerid>
+                    </textarea>                    
+                </div>
+                <br>
+                <button type="button" id="btn-send">
+                    Enviar
+                </button>
+
+            </form>
+        </section>
+    </main>
+    <script src="../static/js/validation-register.js"></script>
 </body>
 </html>
