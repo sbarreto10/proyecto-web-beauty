@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/register.css">
     <link rel="icon" type="image/png" sizes="32x32" href="static/img/MAGNÉTICA.ico">
     
 </head>
@@ -17,6 +20,7 @@
         <section>
             <h2>Compra online</h2>
             <form action="#" id="formRegister" method="GET">
+                
                 <div class="form-control">
                     <label for="">Seleccioná el tema</label>
                     <select name="list-theme" id="list-theme" required>
@@ -26,33 +30,41 @@
                         <option value="">Comentarios</option>
                     </select>
                 </div>
-                <div class="error" id="error-firstname"></div>
+                <div class="error" id="error-list-theme"></div>
+                
                 <div class="form-control">
                     <label for="">Nombre</label>
                     <input type="text" name="firstname" id="firstname" required>
                 </div>
                 <div class="error" id="error-firstname"></div>
+                
                 <div  class="form-control">
                     <label for="">Apellido</label>
-                    <input type="text" name="lastname" id="lastname" maxlength="4" minlength="2" required>
+                    <input type="text" name="lastname" id="lastname" required>
                 </div>
-                <div class="error" id="error-firstname"></div>
+                <div class="error" id="error-lastname"></div>
+                
                 <div class="form-control">
                     <label for="">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Por favor ingresa el email" required>
+                    <input type="email" name="email" id="email" placeholder="Por favor ingrese un email" required>
                 </div>
-                <div class="error" id="error-firstname"></div>
+                <div class="error" id="error-email"></div>
+                
                 <div class="form-control">
                     <label for="">Teléfono</label>
-                    <input type="tel" name="telephone" id="telephone" required>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Por favor ingrese un teléfono" required>
                 </div>
-                <br>
+                <div class="error" id="error-telephone"></div>
+                                    
                 <div class="form-control">                    
                     <label for="">Mensaje</label>
-                    <textarea name="comment" id="comment" requerid>
-                    </textarea>                    
+                    <textarea name="comment" id="comment" rows="4" cols="50" required></textarea>                                       
                 </div>
+                <div class="error" id="error-comment"></div>
+
                 <br>
+                <br>
+
                 <button type="button" id="btn-send">
                     Enviar
                 </button>
@@ -62,4 +74,3 @@
     </main>
     <script src="../static/js/validation-register.js"></script>
 </body>
-</html>
