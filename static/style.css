@@ -9,6 +9,49 @@
     list-style: none;
 }
 
+.header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo-text{
+    background-color:transparent;
+    color: black;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 125%;
+    letter-spacing: 2px;    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 40px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    text-decoration: none;
+    color: white;
+} 
+
+.nav-links a{
+    color: black;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 80%;
+    /*font-weight: bold;*/
+}
 
 body {
     font-family: "Josefin Sans";
@@ -57,8 +100,6 @@ body {
     padding: 20px 0;
 
 }
-
-
 
 .footer-links {
     width: 100%;
